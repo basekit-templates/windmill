@@ -1,0 +1,11 @@
+<header class="template-header">
+	<div class="header-feature">
+		{{widget('feature', 'parallax', {"header": "profile", "strapline":"profile", "buttonText":"", 'positionTopPercentage': '75','showBtn': true})|raw}}	
+	</div>
+</header>
+
+<div class="main-wrap">
+	{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+	<nav class="template-nav">
+		{{widget('extendednavigation', 'navigationheader', {})|raw}}
+	</nav>

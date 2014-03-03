@@ -1,0 +1,867 @@
+/*	===============================
+	Table of Contents
+	===============================
+	- Colour Swatches
+	- Font Swatches
+	- Boostrap Import
+	- Template Styles
+		1.  Globals
+		2.  Header
+		3.  Navigation
+		4.  Home
+		5.  Menu
+		6.  Blog List
+		7.  Blog Post
+		8.  Forms
+		9.  Gallery / Images / Slideshow
+		10. Footer
+		11. Misc
+		12. Responsive
+	=============================== */
+
+/*	===============================
+	Colour Swatches
+	===============================	
+	"color1": == Background
+	"color2": == Contrast colour
+	"color3": == Button colour
+	"color4": == Title colour
+	"color5": == Paragraph colour
+	"color6": == Nav text colour
+	"color7": == Header BG colour
+	=============================== */
+
+/*	===============================
+	Font Swatches
+	===============================	
+	"font1":  == Heading 1
+	"font2":  == Heading 2
+	"font3":  == Heading 3
+	"font4":  == Heading 4
+	"font5":  == Paragraph
+	"font6":  == Navigation Text
+	"font7":  == Buttons
+	"font8":  == Feature Title
+	"font9":  == Feature Subtitle
+	"font10": == Logo
+	=============================== */
+
+
+/*	===============================
+	Bootstrap import
+	=============================== */
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+
+/*	===============================
+	Template Styles
+	=============================== */
+
+// 1. Globals
+html {
+	height: 100%
+}
+
+body {
+	min-height: 100%
+}
+
+html, body {
+	height: 100%
+}
+
+body {
+	min-height:100%;
+	background: image('/img/footer-bg.jpg') center bottom fixed;
+	background-size: 100% auto;
+	background-repeat: repeat;
+}
+
+html, body {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+}
+
+h1 {
+	font-family:@font-swatch1-font-family; 
+	font-weight: @font-swatch1-font-weight; 
+	color:@font-swatch1-color; 
+	line-height:@font-swatch1-line-height; 
+	letter-spacing: @font-swatch1-letter-spacing; 
+	font-size: @font-swatch1-font-size;
+	a {
+		font-family:@font-swatch1-font-family; 
+		font-weight: @font-swatch1-font-weight; 
+		line-height:@font-swatch1-line-height; 
+		letter-spacing: @font-swatch1-letter-spacing; 
+		font-size: @font-swatch1-font-size;
+	}
+}
+
+h2 {
+	font-family:@font-swatch2-font-family; 
+	font-weight: @font-swatch2-font-weight; 
+	color:@font-swatch2-color; 
+	line-height:@font-swatch2-line-height; 
+	letter-spacing: @font-swatch2-letter-spacing; 
+	font-size: @font-swatch2-font-size;
+	a {
+		font-family:@font-swatch2-font-family; 
+		font-weight: @font-swatch2-font-weight; 
+		line-height:@font-swatch2-line-height; 
+		letter-spacing: @font-swatch2-letter-spacing; 
+		font-size: @font-swatch2-font-size;
+	}
+}
+
+h3 {
+	font-family:@font-swatch3-font-family; 
+	font-weight: @font-swatch3-font-weight; 
+	color:@font-swatch3-color; 
+	line-height:@font-swatch3-line-height; 
+	letter-spacing: @font-swatch3-letter-spacing; 
+	font-size: @font-swatch3-font-size;
+	a {
+		font-family:@font-swatch3-font-family; 
+		font-weight: @font-swatch3-font-weight; 
+		line-height:@font-swatch3-line-height; 
+		letter-spacing: @font-swatch3-letter-spacing; 
+		font-size: @font-swatch3-font-size;
+	}
+}
+
+h4 {
+	font-family:@font-swatch4-font-family; 
+	font-weight: @font-swatch4-font-weight; 
+	color:@font-swatch4-color; 
+	line-height:@font-swatch4-line-height; 
+	letter-spacing: @font-swatch4-letter-spacing; 
+	font-size: @font-swatch4-font-size;
+	a {
+		font-family:@font-swatch4-font-family; 
+		font-weight: @font-swatch4-font-weight; 
+		line-height:@font-swatch4-line-height; 
+		letter-spacing: @font-swatch4-letter-spacing; 
+		font-size: @font-swatch4-font-size;
+	}
+}
+
+h5 {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+	a {
+		font-family:@font-swatch5-font-family;
+		font-weight: @font-swatch5-font-weight;
+		line-height:@font-swatch5-line-height;
+		letter-spacing: @font-swatch5-letter-spacing;
+		font-size: @font-swatch5-font-size;
+	}
+}
+
+h6 {
+	font-family:@font-swatch6-font-family;
+	font-weight: @font-swatch6-font-weight;
+	color:@font-swatch6-color;
+	line-height:@font-swatch6-line-height;
+	letter-spacing: @font-swatch6-letter-spacing;
+	font-size: @font-swatch6-font-size;
+	a {
+		font-family:@font-swatch6-font-family;
+		font-weight: @font-swatch6-font-weight;
+		line-height:@font-swatch6-line-height;
+		letter-spacing: @font-swatch6-letter-spacing;
+		font-size: @font-swatch6-font-size;		
+	}
+}
+
+p,
+.contactform label,
+.twitter ul li a,
+.signupform label {
+	font-family:@font-swatch5-font-family;
+	font-weight: @font-swatch5-font-weight;
+	color:@font-swatch5-color;
+	line-height:@font-swatch5-line-height;
+	letter-spacing: @font-swatch5-letter-spacing;
+	font-size: @font-swatch5-font-size;
+}
+
+a {
+	color: @color-swatch2;
+	text-decoration: none;
+	&:hover {
+		color: darken(@color-swatch2, 30%);
+		text-decoration: none;
+	}
+}
+
+.main-wrap {
+	background-color: @color-swatch1;
+	float: left;
+	width: 100%;
+}
+.main {
+	max-width: 1000px;
+	margin: 0 auto;
+	clear: both;
+}
+
+hr.line {
+	background-color: lighten(@color-swatch5, 75%)
+}
+
+// 2. Header
+.template-header {
+	position: relative;
+	color: @color-swatch1;
+	background: @color-swatch7;
+	overflow: hidden;
+	position: relative;
+	h1, h2 {
+		color: @color-swatch1;
+	}
+	.widget.companyname a {
+		color: @color-swatch1;
+	}
+	.content {
+		padding: 40px;
+	}
+}
+
+.feature-btn {
+	display: block;
+}
+
+.widget.feature .feature-bgimg .content button.btn {
+	background-color: lighten(@color-swatch2, 10%);
+	&:hover {
+		background-color: darken(@color-swatch2, 10%);
+	}
+}
+
+.header-feature {
+	position: relative;
+	overflow: hidden;
+	height: 300px;
+	.logo img {
+		max-width: 120px;
+	}
+}
+.widget.feature h2 {
+	padding-bottom: 0;
+}
+.widget.feature .feature-bgimg .content h3 {
+	display: inline-block;
+	text-indent: @font-swatch9-letter-spacing;
+	padding-top: 10px;
+}
+
+.widget.feature .feature-bgimg .content {
+	display: block;
+	padding: 75px 0 0 0;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.widget.logo {
+	max-width: 1000px;
+	margin: 0 auto;
+	.logo {
+		padding: 30px 0;
+	}
+}
+
+// 3. Navigation
+.nav {
+	font-family: 'Oswald', sans-serif;
+	position: relative;
+	padding: 0 20px;
+	ul {
+		display: block;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		border-bottom: 1px solid darken(@color-swatch1, 10%);
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		padding: 20px 25px;
+		display: inline-block;
+	}
+}
+
+.template-nav {
+	float: left;
+	width: 100%;
+	min-height: 49px;
+}
+
+.widget .extendednavigation {
+	text-align: center;
+	float: left;
+	width: 100%;
+	background: @color-swatch2;
+}
+
+.widget .extendednavigation ul {
+	max-width: 1000px;
+	margin: 0 auto;
+	float: none;
+	li {
+		float: none;
+		text-align: center;
+		display: inline-block;
+		a, > .text {
+			padding: 10px 25px 11px;
+			font-family:@font-swatch6-font-family;
+			font-weight: @font-swatch6-font-weight;
+			color:@font-swatch6-color;
+			line-height:@font-swatch6-line-height;
+			letter-spacing: @font-swatch6-letter-spacing;
+			font-size: @font-swatch6-font-size;
+			&:hover {
+				background: @color-swatch7;
+				color:@font-swatch6-color;
+			}
+		}
+	}
+	li.folder {
+		.text:hover, a:hover {
+				color:@font-swatch6-color;
+		}
+	}
+	li.folder:after {
+		right: 11px;
+		top: 44%;
+		border-top-color: @font-swatch6-color;
+	}
+	li.folder:hover {
+		> .text {
+			background: @color-swatch7;
+		}
+		ul {
+			min-width: 150px;
+			background: @color-swatch7;
+			border-top: none;
+		}
+		a {
+			padding: 10px 20px;
+			&:hover {
+				background: darken(@color-swatch7, 10%);
+			}
+		}
+		&:after {
+			border-top-color: @font-swatch6-color;
+		}
+	}
+}
+
+.widget .extendednavigation a.pull {
+	width: 30px;
+	height: 30px;
+	top: 10px;
+	right: 13px;
+	&:after {
+		background-color: @color-swatch2;
+		box-shadow: 0 6px 0 @color-swatch2, 0 12px 0 @color-swatch2;
+		left: 4px;
+		top: 7px;
+		width: 22px;
+	}
+}
+
+
+// 4. Home
+// Nothing to see here
+
+// 5. Menu
+.widget.menu {
+	border: none;
+	h1 {
+		position: relative;
+		padding-bottom: 0;
+	}
+	h2 {
+		position: relative;
+		display: inline-block;
+	}
+	.menu-header {
+		border-bottom: 1px solid darken(@color-swatch5, 10%);
+		margin-bottom: 14px;
+		float: left;
+		width: 100%;
+		p {
+			font-size: bkscale(@font-swatch6-font-size, 0.85);
+			letter-spacing:@font-swatch1-letter-spacing;
+			display: block;
+			float: left;
+			margin-bottom: -13px;
+			background: @color-swatch1;
+			padding-right: 10px;
+			color: @color-swatch5;
+		}
+	}
+}
+
+.menu-items {
+	clear: both;
+}
+
+.menu-item {
+	padding: 10px 40px;
+}
+
+.menu-item-price {
+	p {
+		color: darken(@color-swatch5, 30%);
+		font-family:@font-swatch3-font-family;
+		font-weight:@font-swatch3-font-weight;
+		letter-spacing:@font-swatch3-letter-spacing;
+	}
+}
+
+.menu .menu-subsection {
+	padding: 0;
+	margin-bottom: 40px;
+}
+
+.menu-subsection-name {
+	color: @color-swatch4;
+}
+
+.menu-item-promoted,
+.blog-post-metadata {
+	background: lighten(@color-swatch2, 35%);
+}
+
+.menu-subsection .menu-items {
+	background: lighten(@color-swatch2, 50%);
+}
+
+.menu .menu-subsection li {
+	overflow: hidden;
+}
+
+.menu .menu-items li {
+	padding: 5px 0 12px;
+	margin-bottom: 20px;
+	&.menu-item-promoted {
+		padding: 5px 15px 12px;
+	}
+}
+
+.widget.menu .menu-items > * {
+	float: left;
+}
+
+.inner-item {
+	padding: 15px 0;
+}
+
+.menu .menu-section-item-dietary-props .dietary-icon,
+.menu .menu-info .dietary-icon {
+	padding: 1px 5px 1px 0;
+	&:before, &:after {
+		color: @color-swatch2;
+	}
+	&:before {
+		content: "[";
+	}
+	&:after {
+		content: "]";
+	}
+}
+
+.menu-item-description {
+	padding-bottom: 10px;
+}
+
+.widget.menusections {
+	ul li {
+		margin: 0;
+	}
+	a {
+		padding: 10px 20px;
+		font-family:@font-swatch6-font-family;
+		font-weight: @font-swatch6-font-weight;
+		color:@font-swatch6-color;
+		line-height:@font-swatch6-line-height;
+		letter-spacing: @font-swatch6-letter-spacing;
+		font-size: @font-swatch6-font-size;
+		&:hover {
+			color: @font-swatch6-color-hover;
+		}
+	}
+}
+
+// 6. Blog List
+.blog-post-item {
+	padding-bottom: 20px;
+}
+
+.widget.bloglistposts,
+.blogpost-page .blog-post-item {
+	padding: 20px 0;
+}
+
+div.blog-post-feature-image-wrap {
+	height: 350px;
+	margin-bottom: 5px;
+}
+
+.blog-list-footer {
+	text-align: center;
+	a {
+		margin: 0 50px;
+	}
+}
+
+// 7. Blog Post
+.blog-post-metadata {
+	padding: 10px 20px;
+	margin-top: 10px;
+	time, p {
+		color: lighten(@color-swatch5, 10%);
+	}
+}
+
+// 8. Forms
+label,
+.signupform fieldset label {
+	display: block;
+	padding-top: 10px;
+	margin-bottom: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=search],
+.signupform fieldset input[type=email],
+.widget.profile form fieldset input[type=email],
+textarea {
+	text-indent: 0;
+	height: auto;
+	background: darken(@color-swatch1, 5%);
+	border: 1px solid darken(@color-swatch1, 10%);
+	line-height:@font-swatch5-line-height;
+	font-size:@font-swatch5-font-size;
+	padding: 8px 10px;
+	&:focus {
+		border: 1px solid darken(@color-swatch1, 15%);
+	}	
+}
+
+textarea {
+	resize: vertical;
+}
+
+.widget.profile form fieldset input,
+.signupform fieldset input,
+input[type=search] {
+	width: 91%;
+}
+
+.contactform button.btn,
+button.btn,
+.widget.profile form button,
+.widget.paypalbuynow .widget.button.paypal,
+.widget.tweet a,
+.widget.dropbox button,
+.clicktocall a,
+.signupform fieldset button,
+.blog-search-form button,
+.widget.socialicons span a,
+.widget.profile .bk-profile-socialicons span a,
+.template-footer .widget.profile .bk-profile-socialicons span a {
+	-webkit-font-smoothing: inherit;
+	border: 1px solid lighten(@color-swatch3, 5%);
+	border-bottom: 1px solid @color-swatch3;
+	color: @color-swatch1;
+	background-color: lighten(@color-swatch3, 5%);
+	line-height:@font-swatch5-line-height;
+	font-size:@font-swatch5-font-size;
+	font-family:@font-swatch5-font-family;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid @color-swatch7;
+		background-color: @color-swatch7;
+	}
+}
+
+.widget.socialicons span a,
+.widget.profile .bk-profile-socialicons span a,
+.template-footer .widget.profile .bk-profile-socialicons span a	{
+	border-radius: 100%;
+}
+
+.clicktocall a,
+.blog-search-form button,
+.widget.profile form button,
+.signupform fieldset button {
+	padding: 8px 14px;
+	margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	display: none;
+}
+
+.widget.clicktocall a {
+	display: inline-block;
+}
+
+// 9. Gallery / Images / Slideshow
+.widget.gallery {
+	margin: 0;
+}
+
+.widget.responsiveslideshow .slideshow-widget {
+	.btn-prev, .btn-next {
+		text-indent: 1000px;
+		overflow: hidden;
+		height: 30px;
+		width: 30px;
+		top: 50%;
+		margin-top: -15px;
+		&:before {
+			content: "";
+			display: block;
+			border: 5px solid transparent;
+			position: absolute;
+			top: 10px;
+			left: 11px;
+			width: 0;
+			height: 0;
+		}
+	}
+	.btn-next:before {
+		border-left-color: @color-swatch1;
+		left: 13px;
+	}
+	.btn-prev:before {
+		border-right-color: @color-swatch1;
+		left: 6px;
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev,
+.widget.responsiveslideshow .slideshow-widget .btn-next,
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	background-color: fadeout(@color-swatch2, 50%);
+	border-radius: 2px;
+}
+
+.widget.responsiveslideshow {
+	.slideshow-widget .btn-play, .btn-prev, .btn-next {
+		-webkit-transition: opacity .2s;
+		-moz-transition: opacity .2s;
+		-ms-transition: opacity .2s;
+		transition: opacity .2s;
+		opacity: .25;
+	}
+	&:hover {
+		.slideshow-widget .btn-play, .btn-prev, .btn-next {
+			opacity: .75;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.content-wrapper {
+		background: fadeout(@color-swatch1, 50%);
+		.title {
+			font-weight: @font-swatch3-font-weight;
+			&:after {
+				content: ":";
+			}
+		}
+		.title, .description {
+			color: @color-swatch5;
+		}
+		.title {
+			padding-right: 0;
+			padding-left: 6px;
+		}
+		.description {
+			padding-left: 0;
+		}
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot {
+	border-radius: 100%;
+	&.selected {
+		background-color: @color-swatch2;
+		border-width: 3px;
+	}
+}
+
+.widget.responsiveslideshow:hover span.btn-play,
+.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause {
+	&:before, &:after {
+		width: 8px;
+		height: 26px;
+		background: @color-swatch1;
+		border: 0;
+		top: 34%;
+		left: 28px;
+	}
+	&:after {
+		left: 40px;
+	}
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play {
+	text-indent: -99999px;
+	width: 80px;
+	height: 80px;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 20px solid transparent;
+		border-left-color: @color-swatch1;
+		left: 32px;
+		top: 30%;
+		border-top-width: 15px;
+		border-bottom-width: 15px;
+	}
+}
+
+.widget.gallery ul li span.inner,
+.blog-post-feature-image-wrap,
+.menu-item-image-wrap,
+.widget.map {
+	border: 1px solid darken(@color-swatch1, 10%);
+}
+
+.blog-post-feature-image-wrap,
+.menu-item-image-wrap {
+	width: 100%;
+	height: 200px;
+	line-height: 0;
+	background-size: cover;
+	background-position: center;
+	img {
+		display: none;
+	}
+}
+
+.menu-item-image-wrap {
+	height: 200px;
+}
+
+// 10. Footer
+.template-footer {
+	margin: 0 20px;
+	border-top: 1px solid darken(@color-swatch1, 10%);
+}
+
+.template-aside {
+	width: 50%;
+	padding: 20px 25px;
+	float: left
+}
+
+.footer-content {
+	max-width: 1010px;
+	margin: 0 auto;
+}
+
+// 11. Misc
+// Nothing to see here
+
+// 12. Responsive
+@media @tablet {
+	.header-feature,
+	.home .header-feature,
+	.footer-feature {
+		height: 275px;
+		.logo img {
+			max-width: 120px;
+		}
+	}
+	.home .widget.feature .feature-bgimg .content,
+	.widget.feature .feature-bgimg .content,
+	.widget.feature .feature-bgimg {
+		height: 275px;
+	}
+	.widget.feature .feature-bgimg .content {
+		h2 {
+			font-size: bkscale(@font-swatch8-font-size, 0.5);
+			line-height: bkscale(@font-swatch8-line-height, 0.5);
+		}
+		h3 {
+			font-size: bkscale(@font-swatch9-font-size, 0.5);
+			line-height: bkscale(@font-swatch9-line-height, 0.5);
+			border-top: none;
+		}
+	}
+	.template-header .template-aside {
+		display: none;
+	}
+	.widget.profile form fieldset input,
+	.signupform fieldset input,
+	input[type=search] {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.template-footer {
+		padding-bottom: 40px;
+		float: left;
+		.template-aside {
+			width: 100%;
+			padding: 20px 0 0 0;
+		}
+	}
+	.widget .extendednavigation {
+		border-bottom: none;
+	}
+	.widget .extendednavigation ul {
+		padding: 0;
+	}
+	.widget .extendednavigation ul li,
+	.widget .extendednavigation ul.align-left li {
+		padding: 0;
+		border-bottom: 1px solid darken(@color-swatch1, 10%);
+	}
+	.widget .extendednavigation ul li.folder {
+		right: 20px;
+		margin-right: 0;
+	}
+	.template-nav {
+		background: @color-swatch2;
+		float: none;
+		width: auto;
+	}
+	.main-wrap {
+		width: 100%;
+	}
+	.widget .extendednavigation ul li.folder:hover ul {
+		margin: 1px 0 0;
+		border: none;
+	}
+	.widget.responsiveslideshow .description {
+		display: inline-block;
+	}
+	.menu .main, .main {
+		padding: 0 10px;
+	}
+}

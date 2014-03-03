@@ -1,0 +1,146 @@
+{
+	"name":"Windmill",
+	"thumbnail":"windmill.png",
+	"screenshot":"windmill.png",
+    "tags": {
+    "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
+    },
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#5ebddb",
+            "color3":"#5ebddb",
+            "color4":"#121212",
+            "color5":"#8c9091",
+            "color6":"#ffffff",
+            "color7":"#0d7b9e"
+        },
+        "Swatch 2": {
+            "color1":"#905757",
+            "color2":"#905757",
+            "color3":"#905757",
+            "color4":"#4d2f2f",
+            "color5":"#553333",
+            "color6":"#4d2f2f",
+            "color7":"#ffffff"
+        },
+        "Swatch 3": {
+            "color1":"#739057",
+            "color2":"#739057",
+            "color3":"#739057",
+            "color4":"#3e4d2f",
+            "color5":"#3f4f30",
+            "color6":"#3e4d2f",
+            "color7":"#ffffff"
+        },
+        "Swatch 4": {
+            "color1":"#905788",
+            "color2":"#905788",
+            "color3":"#905788",
+            "color4":"#4d2f49",
+            "color5":"#482c44",
+            "color6":"#4d2f49",
+            "color7":"#ffffff"
+        },
+        "Swatch 5": {
+            "color1":"#4055a7",
+            "color2":"#4055a7",
+            "color3":"#4055a7",
+            "color4":"#232e5a",
+            "color5":"#273467",
+            "color6":"#232e5a",
+            "color7":"#ffffff"
+        }
+    },
+    "fontSwatch": {
+       "title": "Futura / Lato",
+        "font1": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
+        },
+        "font2": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "600",
+            "line-height": "26px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "300",
+            "line-height": "24px",
+            "color": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "color-hover": "darken(@color-swatch2, 30%)",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+         },
+        "font7": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "14px",
+            "font-weight": "normal",
+            "line-height": "24px",
+            "color": "@color-swatch7",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "darken(@color-swatch7,10%)"
+        },
+        "font8": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "42px",
+            "font-weight": "500",
+            "line-height": "52px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "22px",
+            "font-weight": "500",
+            "line-height": "32px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Futura\", \"Helvetica\", sans-serif",
+            "font-size": "42px",
+            "font-weight": "400",
+            "line-height": "52px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}
