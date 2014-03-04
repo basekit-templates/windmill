@@ -266,14 +266,15 @@ hr.line {
 
 .widget.feature .feature-bgimg .content {
 	display: block;
-	padding: 75px 0 0 0;
-	max-width: 1000px;
+	padding: 75px 20px 0 20px;
+	max-width: 1040px;
 	margin: 0 auto;
 }
 
 .widget.logo {
-	max-width: 1000px;
+	max-width: 1040px;
 	margin: 0 auto;
+	padding: 0 20px;
 	.logo {
 		padding: 30px 0;
 	}
@@ -373,8 +374,8 @@ hr.line {
 	top: 10px;
 	right: 13px;
 	&:after {
-		background-color: @color-swatch2;
-		box-shadow: 0 6px 0 @color-swatch2, 0 12px 0 @color-swatch2;
+		background-color: @color-swatch1;
+		box-shadow: 0 6px 0 @color-swatch1, 0 12px 0 @color-swatch1;
 		left: 4px;
 		top: 7px;
 		width: 22px;
@@ -488,6 +489,9 @@ hr.line {
 }
 
 .widget.menusections {
+	.menu-section-list {
+		border: 1px solid @color-swatch2;
+	}
 	ul li {
 		margin: 0;
 	}
@@ -495,7 +499,7 @@ hr.line {
 		padding: 10px 20px;
 		font-family:@font-swatch6-font-family;
 		font-weight: @font-swatch6-font-weight;
-		color:@font-swatch6-color;
+		color:@color-swatch2;
 		line-height:@font-swatch6-line-height;
 		letter-spacing: @font-swatch6-letter-spacing;
 		font-size: @font-swatch6-font-size;
@@ -603,6 +607,10 @@ button.btn,
 .widget.profile .bk-profile-socialicons span a,
 .template-footer .widget.profile .bk-profile-socialicons span a	{
 	border-radius: 100%;
+	background-color: @color-swatch1;
+	&:hover {
+		background-color: lighten(@color-swatch2, 30%);
+	}
 }
 
 .clicktocall a,
@@ -776,17 +784,78 @@ input[type="search"]::-webkit-search-decoration {
 
 .template-aside {
 	width: 50%;
-	padding: 20px 25px;
+	padding: 20px 20px;
 	float: left
 }
 
 .footer-content {
-	max-width: 1010px;
+	max-width: 1040px;
 	margin: 0 auto;
 }
 
 // 11. Misc
-// Nothing to see here
+
+/* SVG Icons */
+.svg .widget.socialicons span.bk-socialicons-twitter a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+	background-image: image('/images/social/socialicons-twitter.svg');
+}
+
+.svg .widget.socialicons span.bk-socialicons-linkedin a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+	background-image: image('/images/social/socialicons-linkedin.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-facebook a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+	background-image: image('/images/social/socialicons-facebook.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-rss a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+	background-image: image('/images/social/socialicons-rss.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-googleplus a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+	background-image: image('/images/social/socialicons-googleplus.svg')
+}
+
+.svg .widget.socialicons span.bk-socialicons-youtube a,
+.svg .widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+	background-image: image('/images/social/socialicons-youtube.svg')
+}
+
+/* PNG Icons */
+.widget.socialicons span.bk-socialicons-twitter a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+	background-image: image('/images/social/socialicons-twitter.png');
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+	background-image: image('/images/social/socialicons-linkedin.png')
+}
+
+.widget.socialicons span.bk-socialicons-facebook a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+	background-image: image('/images/social/socialicons-facebook.png')
+}
+
+.widget.socialicons span.bk-socialicons-rss a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+	background-image: image('/images/social/socialicons-rss.png')
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+	background-image: image('/images/social/socialicons-googleplus.png')
+}
+
+.widget.socialicons span.bk-socialicons-youtube a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+	background-image: image('/images/social/socialicons-youtube.png')
+}
 
 // 12. Responsive
 @media @tablet {
@@ -840,10 +909,9 @@ input[type="search"]::-webkit-search-decoration {
 	.widget .extendednavigation ul li,
 	.widget .extendednavigation ul.align-left li {
 		padding: 0;
-		border-bottom: 1px solid darken(@color-swatch1, 10%);
+		border-bottom: 1px solid darken(@color-swatch2, 10%);
 	}
 	.widget .extendednavigation ul li.folder {
-		right: 20px;
 		margin-right: 0;
 	}
 	.template-nav {
@@ -857,6 +925,9 @@ input[type="search"]::-webkit-search-decoration {
 	.widget .extendednavigation ul li.folder:hover ul {
 		margin: 1px 0 0;
 		border: none;
+	}
+	.widget .extendednavigation ul li.folder:hover a {
+		padding: 10px 25px;
 	}
 	.widget.responsiveslideshow .description {
 		display: inline-block;
