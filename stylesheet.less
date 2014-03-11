@@ -590,17 +590,18 @@ button.btn,
 .widget.profile .bk-profile-socialicons span a,
 .template-footer .widget.profile .bk-profile-socialicons span a {
 	-webkit-font-smoothing: inherit;
-	border: 1px solid lighten(@color-swatch3, 5%);
-	border-bottom: 1px solid @color-swatch3;
-	color: @color-swatch1;
-	background-color: lighten(@color-swatch3, 5%);
-	line-height:@font-swatch5-line-height;
-	font-size:@font-swatch5-font-size;
-	font-family:@font-swatch5-font-family;
+	border: 1px solid @font-swatch7-background-color;
+	border-bottom-color: darken(@font-swatch7-background-color, 5%);
+	color: @font-swatch7-color;
+	background-color: @font-swatch7-background-color;
+	line-height: @font-swatch7-line-height;
+	font-size: @font-swatch7-font-size;
+	font-family: @font-swatch7-font-family;
 	cursor: pointer;
 	&:hover {
-		border: 1px solid @color-swatch7;
-		background-color: @color-swatch7;
+		background-color: @font-swatch7-background-color-hover;
+		border: 1px solid @font-swatch7-background-color-hover;
+		border-bottom-color: darken(@font-swatch7-background-color-hover, 5%);
 	}
 }
 
@@ -608,9 +609,9 @@ button.btn,
 .widget.profile .bk-profile-socialicons span a,
 .template-footer .widget.profile .bk-profile-socialicons span a	{
 	border-radius: 100%;
-	background-color: @color-swatch1;
+	background-color: @font-swatch7-background-color;
 	&:hover {
-		background-color: lighten(@color-swatch2, 30%);
+		background-color: lighten(@font-swatch7-background-color, 30%);
 	}
 }
 

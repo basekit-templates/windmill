@@ -113,10 +113,10 @@
             "font-size": "14px",
             "font-weight": "normal",
             "line-height": "24px",
-            "color": "@color-swatch7",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch2",
-            "background-color-hover": "darken(@color-swatch7,10%)"
+            "background-color-hover": "darken(@color-swatch2,10%)"
         },
         "font8": {
             "font-family": "\"Futura\", \"Helvetica\", sans-serif",
