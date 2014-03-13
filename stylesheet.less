@@ -72,7 +72,6 @@ html, body {
 
 body {
 	min-height:100%;
-	background: image('/img/footer-bg.jpg') center bottom fixed;
 	background-size: 100% auto;
 	background-repeat: repeat;
 }
@@ -464,11 +463,13 @@ hr.line {
 }
 
 .widget.menu .menu-items > * {
-	float: left;
+	//float: left;
+	width: 100%;
 }
 
 .inner-item {
 	padding: 15px 0;
+	.clearfix;
 }
 
 .menu .menu-section-item-dietary-props .dietary-icon,
@@ -609,7 +610,7 @@ button.btn,
 .widget.profile .bk-profile-socialicons span a,
 .template-footer .widget.profile .bk-profile-socialicons span a	{
 	border-radius: 100%;
-	background-color: @font-swatch7-background-color;
+	background-color: @color-swatch1;
 	&:hover {
 		background-color: lighten(@font-swatch7-background-color, 30%);
 	}
