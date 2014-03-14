@@ -396,18 +396,28 @@ hr.line {
 		display: inline-block;
 	}
 	.menu-header {
-		border-bottom: 1px solid darken(@color-swatch5, 10%);
 		margin-bottom: 14px;
 		float: left;
 		width: 100%;
+		overflow: hidden;
 		p {
+			position: relative;
 			font-size: bkscale(@font-swatch6-font-size, 0.85);
 			letter-spacing:@font-swatch1-letter-spacing;
 			display: block;
 			float: left;
-			margin-bottom: -13px;
 			padding-right: 10px;
+			padding-bottom: 0;
 			color: @color-swatch5;
+			&:after {
+				left: 100%;
+				bottom: 33%;
+				height: 0;
+				width: 1000%;
+				content: "";
+				position: absolute;
+				border-bottom: 1px solid darken(@color-swatch5, 10%);
+			}
 		}
 	}
 }
@@ -489,6 +499,7 @@ hr.line {
 }
 
 .widget.menusections {
+	text-align: center;
 	.menu-section-list {
 		border: 1px solid @color-swatch2;
 	}
